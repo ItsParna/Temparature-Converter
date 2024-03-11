@@ -1,0 +1,72 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.img{
+    background-image: url('images/Tempimg.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .img::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }    
+.container{
+    max-width: 500px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: blue;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+input[type="text"],select{
+    font-size: 15px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.5);
+
+}
+button{
+    font-size: 15px;
+    padding: 10px 20px;
+    background-color:rgb(0, 95, 183) ;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0,3s ease-in-out;
+}
+button:hover{
+    background-color:rgba(10, 122, 0, 0.823) ;
+}
+.result{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+    margin: top 20px;
+}
